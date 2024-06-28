@@ -3,7 +3,7 @@
     /// <summary>
     /// The repositorio.
     /// </summary>
-    internal class Repositorio
+    internal class Repositorio : IRepositorio
     {
         /// <summary>
         /// Obteners the libros.
@@ -31,6 +31,11 @@
         public Ciudad ObtenerCiudad()
         {
             return new();
+        }
+
+        public IEnumerable<Ciudad> ObtenerCiudades()
+        {
+            return Enumerable.Empty<Ciudad>();
         }
     }
 }

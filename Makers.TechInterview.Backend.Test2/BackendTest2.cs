@@ -3,12 +3,12 @@
     /// <summary>
     /// The backend test2.
     /// </summary>
-    public class BackendTest2
+    public class BackendTest2 : IBackendTest2
     {
         /// <summary>
         /// 
         /// </summary>
-        public void Start()
+        public void StartAbc()
         {
             /*
             public async IEnumerable<ClaseResultado> abc() // nombre del método no descriptivo, mlas uso de la plabra async, no se esta trabajando con programación asincrona
@@ -59,6 +59,8 @@
 
             return Enumerable.Empty<ClaseResultado>();
         }
+
+        public void StartObtenerLibros() => ObtenerLibros();
 
         internal IEnumerable<LibroResultadoDto> ObtenerLibros()
         {
