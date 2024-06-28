@@ -2,7 +2,7 @@
 {
     public interface IBackendTest2
     {
-        void StartAbc();
+        IEnumerable<ClaseResultado> StartAbc();
         void StartObtenerLibros();
     }
 }

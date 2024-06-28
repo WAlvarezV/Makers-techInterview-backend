@@ -8,7 +8,7 @@
         /// <summary>
         /// 
         /// </summary>
-        public void StartAbc()
+        public IEnumerable<ClaseResultado> StartAbc()
         {
             /*
             public async IEnumerable<ClaseResultado> abc() // nombre del método no descriptivo, mlas uso de la plabra async, no se esta trabajando con programación asincrona
@@ -35,7 +35,7 @@
                 return new claseResultado(); // si no hay resultados devuelve uns instancia de la clase generando excepción porque se espera un listado de intancias de esta clase
             }
             */
-            abc();
+            return abc();
 
         }
 

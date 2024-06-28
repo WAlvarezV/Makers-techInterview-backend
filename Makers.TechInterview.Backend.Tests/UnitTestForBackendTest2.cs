@@ -22,12 +22,15 @@ namespace Makers.TechInterview.Backend.Tests
             //Arrange
             var libros = _autoFixture.CreateMany<Libro>();
             var autores = _autoFixture.CreateMany<AutorLibro>();
-
+            var result = Enumerable.Empty<ClaseResultado>();
             //Act
+            _repo.ObtenerLibros().Returns(libros);
+            _repo.ObtenerAutores().Returns(autores);
 
-
+            _backendTest2.StartAbc().Returns(result);
             //Assert
 
+            Assert.Empty(result);
         }
     }
 }
